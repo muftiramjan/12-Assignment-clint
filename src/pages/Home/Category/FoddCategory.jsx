@@ -5,8 +5,6 @@ import 'swiper/css';
 import sliad1 from "../../../assets/home/slide1.jpg"
 import sliad2 from "../../../assets/home/slide2.jpg"
 import sliad3 from "../../../assets/home/slide3.jpg"
-import sliad4 from "../../../assets/home/slide4.jpg"
-import sliad5 from "../../../assets/home/slide5.jpg"
 import Sectionhedin from '../../../components/Sectionhedin';
 const FoddCategory = () => {
     return (
