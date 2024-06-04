@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Menuitems = ({item}) => {
+const Startteaching  = ({item}) => {
     const {name,recipe,image,price}=item;
     return (
        <>
@@ -16,7 +16,7 @@ const Menuitems = ({item}) => {
        </>
     );
 };
-Menuitems.propTypes = {
+Startteaching.propTypes = {
     item: PropTypes.object
 };
-export default Menuitems;
+export default Startteaching;

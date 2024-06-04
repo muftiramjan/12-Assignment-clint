@@ -1,9 +1,9 @@
 
 import Sectionhedin from "../../../components/Sectionhedin";
-import Menuitems from "../shared/Menuitems";
+import Menuitems from "../shared/Startteaching";
 import UseMenu from "../../../Hoks/usehoks/UseMenu";
 
-const Pupoermenu = () => {
+const OurTeachers = () => {
     const [menus]=UseMenu();
     const pupoler = menus.filter(item => item.category === 'popular')
     
@@ -11,7 +11,7 @@ const Pupoermenu = () => {
         <section className="mb-8 mt-10">
             <Sectionhedin
              sabheding={'---Check it out---'}
-             heding={'FROM OUR MENU'}
+             heding={'Our Teachers'}
             ></Sectionhedin>
             <div className="grid md: grid-cols-2 gap-10">
                 {
@@ -24,11 +24,11 @@ const Pupoermenu = () => {
                 
             </div>
            <div className="flex items-center justify-center mt-5">
-           <button className="btn btn-outline border-0 border-b-4 ">View Full  Menu</button>
+           <button className="btn btn-outline border-0 border-b-4 ">start teaching today</button>
            </div>
         </section>
       
     );
 };
 
-export default Pupoermenu;
+export default OurTeachers;
