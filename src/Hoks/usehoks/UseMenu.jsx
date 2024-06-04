@@ -5,16 +5,6 @@ import UseAxiosPublik from "./UseAxiosPublik";
 
 
 const UseMenu = () => {
-    // const [menus, setmenu] = useState([]);
-    // const [loddin, setloddin] = useState(true);
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/menu')
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             setmenu(data)
-    //             setloddin(false)
-    //         })
-    // }, [])
     const  axiosPublic= UseAxiosPublik();
 const {data : menus=[],isPending: loddin,refetch} =useQuery({
     queryKey: ['menu'],

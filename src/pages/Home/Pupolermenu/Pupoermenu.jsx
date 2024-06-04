@@ -1,9 +1,9 @@
 
 import Sectionhedin from "../../../components/Sectionhedin";
-import Menuitems from "../shared/Startteaching";
+import Menuitems from "../shared/Menuitems";
 import UseMenu from "../../../Hoks/usehoks/UseMenu";
 
-const OurTeachers = () => {
+const Pupoermenu = () => {
     const [menus]=UseMenu();
     const pupoler = menus.filter(item => item.category === 'popular')
     
@@ -23,12 +23,10 @@ const OurTeachers = () => {
                 }
                 
             </div>
-           <div className="flex items-center justify-center mt-5">
-           <button className="btn btn-outline border-0 border-b-4 ">start teaching today</button>
-           </div>
+          
         </section>
       
     );
 };
 
-export default OurTeachers;
+export default Pupoermenu;

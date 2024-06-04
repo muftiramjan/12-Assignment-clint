@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import '@smastrom/react-rating/style.css'
 import Reviw from "./Reviw";
 
-const Testimonials = () => {
+const TESTIMONIALS = () => {
     const [Reviws, setReviw] = useState([]);
     useEffect(() => {
         fetch('http://localhost:5000/reviews')
@@ -17,7 +17,7 @@ const Testimonials = () => {
         <section className="my-20">
             <Sectionhedin
                 sabheding={'---What Our Clients Say---'}
-                heding={'ALL  Courses'}
+                heding={'Courses'}
             ></Sectionhedin>
           <div className="grid  lg:grid-cols-3">
           {
@@ -28,4 +28,4 @@ const Testimonials = () => {
     );
 };
 
-export default Testimonials;
+export default TESTIMONIALS;
