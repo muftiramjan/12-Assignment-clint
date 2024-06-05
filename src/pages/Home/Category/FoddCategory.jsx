@@ -36,7 +36,7 @@ const FoddCategory = () => {
         <section className="">
             <Sectionhedin
                 sabheding={'---From 11:00am to 10:00pm---'}
-                heding={'ORDER ONLINE'}
+                heding={'partnership company'}
             ></Sectionhedin>
             <Marquee pauseOnClick={true} pauseOnHover={true} speed={50} >
                 {images.map((image, index) => (
@@ -61,40 +61,3 @@ const FoddCategory = () => {
 };
 
 export default FoddCategory;
-// import Marquee from "react-fast-marquee";
-// import 'swiper/css/pagination';
-// import 'swiper/css';
-// import sliad1 from "../../../assets/home/40.jpg"
-// import sliad2 from "../../../assets/home/45.jpg"
-// import sliad3 from "../../../assets/home/46.jpg"
-// import sliad4 from "../../../assets/home/47.jpg"
-// import sliad5 from "../../../assets/home/48.jpg"
-// import sliad6 from "../../../assets/home/49.jpg"
-// import sliad7 from "../../../assets/home/50.jpg"
-// import sliad8 from "../../../assets/home/51.jpg"
-// import Sectionhedin from '../../../components/Sectionhedin';
-// const FoddCategory = () => {
-//     return (
-
-//      <section className="">
-//         <Sectionhedin
-//         sabheding={'---From 11:00am to 10:00pm---'}
-//         heding={'ORDER ONLINE'}
-//         ></Sectionhedin>
-//      <Marquee pauseOnClick={true} pauseOnHover={true} speed={50} >
-//   <img className="w-96 h-80 p-4 mr-8 rounded-xl" src={sliad1} alt="" />
-//   <img className="w-96 h-80 p-4 mr-8 rounded-xl" src={sliad2} alt="" />
-//   <img className="w-96 h-80 p-4 mr-8 rounded-xl"  src={sliad3} alt="" />
-//   <img className="w-96 h-80 p-4 mr-8 rounded-xl" src={sliad4} alt="" />
-//   <img className="w-96 h-80 p-4 mr-8 rounded-xl" src={sliad5} alt="" />
-//   <img className="w-96 h-80 p-4 mr-8 rounded-xl" src={sliad6} alt="" />
-//   <img  className="w-96 h-80 p-4 mr-8 rounded-xl" src={sliad7} alt="" />
-//   <img className="w-96 h-80 p-4 mr-8 rounded-xl" src={sliad8} alt="" />
-// </Marquee>
-
-    
-//      </section>
-//     );
-// };
-
-// export default FoddCategory;

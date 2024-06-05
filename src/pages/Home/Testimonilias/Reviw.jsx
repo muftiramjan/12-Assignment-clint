@@ -8,9 +8,9 @@ const Reviw = ({rivew}) => {
         price,
         total_enrollment,description}=rivew;
     return (
-    <div className='bg-slate-100 p-4'>
+    <div className='bg-sky-950 p-4 rounded-2xl ml-3 mt-3'>
             <div className="card w-96  shadow-md">
-            <figure><img className='w-96 h-80' src={image}alt="Shoes" /></figure>
+            <figure><img className='w-96 h-80 rounded-xl' src={image}alt="Shoes" /></figure>
             <div className="card-body bg-sky-50">
                 <h2 className="card-title">{title}</h2>
                 <h2 className="card-title ">{instructor}</h2>

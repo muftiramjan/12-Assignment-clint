@@ -13,7 +13,7 @@ const Pupoermenu = () => {
              sabheding={'---Check it out---'}
              heding={'Our Teachers'}
             ></Sectionhedin>
-            <div className="grid md: grid-cols-2 gap-10">
+            <div className="grid md: grid-cols-2 gap-10 bg-orange-50 p-5">
                 {
                     pupoler.map( item => <Menuitems
                     key={item._data}
