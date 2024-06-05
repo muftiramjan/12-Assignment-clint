@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ordercover from "../../../assets/shop/banner2.jpg"
+import ordercover from "../../../assets/home/68.jpg"
 import Ourmenucover from "../../Home/shared/over/Ourmenucover";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
@@ -9,49 +9,49 @@ import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 
 const Order = () => {
-    const categorys =['salad','pizza','soup','dessert','offered'];
+    const categorys =['Math','pizza','soup','dessert','offered'];
     const {category}=useParams();
     const initilgeindex = categorys.indexOf(category);
     const [tabsindex,settabindex]= useState(initilgeindex);
     const [menus] = UseMenu();
     
-    const salad = menus.filter(item => item.category === 'salad')
-    const pizza = menus.filter(item => item.category === 'pizza')
-    const soup = menus.filter(item => item.category === 'soup')
-    const dessert = menus.filter(item => item.category === 'dessert')
-    const offered = menus.filter(item => item.category === 'offered')
+    const Math = menus.filter(item => item.category === 'Math')
+    const Language = menus.filter(item => item.category === 'Language')
+    const Library = menus.filter(item => item.category === 'Library')
+    const French = menus.filter(item => item.category === 'French')
+    const MusicProgram = menus.filter(item => item.category === 'MusicProgram')
     return (
         <div>
             <Helmet><title>Order</title></Helmet>
-            <Ourmenucover img={ordercover} title='OUR SHOP'></Ourmenucover>
+            <Ourmenucover img={ordercover} title='order confrim here'></Ourmenucover>
             <Tabs defaultIndex={tabsindex} onSelect={(index) => settabindex(index)}>
                 <TabList>
-                    <Tab>Salad</Tab>
-                    <Tab>pizza</Tab>
-                    <Tab>soups</Tab>
-                    <Tab>desserts</Tab>
-                    <Tab>offered</Tab>
+                    <Tab>Math</Tab>
+                    <Tab>Language</Tab>
+                    <Tab>Library</Tab>
+                    <Tab>French</Tab>
+                    <Tab>MusicProgram</Tab>
                     
                 </TabList>
                 
                 <TabPanel>
-                <OrderTab items={salad}></OrderTab>
+                <OrderTab items={Math}></OrderTab>
                 </TabPanel>
 
                 <TabPanel>
-                <OrderTab items={pizza}></OrderTab>
+                <OrderTab items={Language}></OrderTab>
                 </TabPanel>
 
                 <TabPanel>
-                <OrderTab items={soup}></OrderTab>
+                <OrderTab items={Library}></OrderTab>
                 </TabPanel>
 
                 <TabPanel>
-                <OrderTab items={dessert}></OrderTab>
+                <OrderTab items={French}></OrderTab>
                 </TabPanel>
 
                 <TabPanel>
-                <OrderTab items={offered}></OrderTab>
+                <OrderTab items={MusicProgram}></OrderTab>
                 </TabPanel>
             </Tabs>
         </div>
