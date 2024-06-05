@@ -2,7 +2,6 @@ import Menuitems from "../../Home/shared/Menuitems";
 import PropTypes from 'prop-types';
 import Ourmenucover from "../../Home/shared/over/Ourmenucover";
 import { Link } from "react-router-dom";
-
 const Menucatgory = ({items,title,img}) => {
     
     return (
@@ -23,7 +22,7 @@ const Menucatgory = ({items,title,img}) => {
             </div>
             {/* <div className="flex items-center justify-center mt-5"> */}
 
-           <Link to={`/order/${title}`}><button className="btn btn-outline border-0 border-b-4 items-center">order your food</button></Link> 
+           <Link to={`/order/${title}`}><button className="btn btn-outline border-0 border-b-4 items-center">chose your classes</button></Link> 
             {/* </div> */}
         </div>
     );

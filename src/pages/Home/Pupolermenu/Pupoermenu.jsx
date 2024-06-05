@@ -5,7 +5,7 @@ import UseMenu from "../../../Hoks/usehoks/UseMenu";
 
 const Pupoermenu = () => {
     const [menus]=UseMenu();
-    const pupoler = menus.filter(item => item.category === 'popular')
+    const pupoler = menus.filter(item => item.category === 'Math')
     
     return (
         <section className="mb-8 mt-10">
