@@ -12,7 +12,6 @@ const NavBar = () => {
       .catch(error => console.log(error))
 
   }
-
   return (
     <div className="navbar fixed z-10 bg-opacity-30 bg-black text-blue-800 lg:text-amber-400 lg:max-w-screen-xl">
       <div className="navbar-start">
