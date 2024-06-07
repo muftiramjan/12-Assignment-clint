@@ -26,8 +26,8 @@ const Testimonials = () => {
     return (
         <section className="my-20">
             <Sectionhedin
-                sabheding={'---What Our Clients Say---'}
-                heding={'TESTIMONIALS'}
+                sabheding={''}
+                heding={'Corsses'}
             ></Sectionhedin>
             <div className="grid lg:grid-cols-3">
                 {

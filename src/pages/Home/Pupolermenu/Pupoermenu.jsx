@@ -10,7 +10,7 @@ const Pupoermenu = () => {
     return (
         <section className="mb-8 mt-10">
             <Sectionhedin
-             sabheding={'---Check it out---'}
+             sabheding={''}
              heding={'Our Teachers'}
             ></Sectionhedin>
             <div className="grid md: grid-cols-2 gap-10 bg-orange-50 p-5">

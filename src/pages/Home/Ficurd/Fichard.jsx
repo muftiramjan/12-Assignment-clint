@@ -5,7 +5,7 @@ const Fichard = () => {
     return (
         <div className="featurd-item w-full text-white pt-10 my-20 bg-fixed">
             <Sectionhedin
-                sabheding={'---Check it out---'}
+                sabheding={''}
                 heding={'Get Your Quality'}
             ></Sectionhedin>
             <div className="md: flex justify-center items-center py-20 px-36 bg-opacity-40 bg-slate-300">

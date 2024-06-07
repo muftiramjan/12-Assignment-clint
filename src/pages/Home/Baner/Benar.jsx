@@ -1,5 +1,4 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-// import { Carousel } from 'react-responsive-carousel';
 import img1 from'../../../assets/home/11.jpg';
 import img2 from'../../../assets/home/29.jpg';
 import img3 from'../../../assets/home/13.jpg';
@@ -12,13 +11,13 @@ const Benar = () => {
             <div id="slide1" className="carousel-item relative w-full">
                 <img src={img1} className="w-full rounded-xl" />
                 <div className="absolute left-0 right-0 h-full rounded-xl flex items-center ">
-                    <div className="space-y-7 w-1/2 pl-7">
-                        <h1 className="text-4xl font-bold text-white">
-                            Affordable Price <br /> For Car <br /> Servicing
+                    <div className="space-y- w-1/2 pl-7 text-teal-100">
+                        <h1 className="text-4xl font-bold">
+                        Illuminate Education, Foster Dreams 
                         </h1>
-                        <p className="text- font-bold text-white">There are many variations of passages of  available, but the <br /> majority have suffered alteration in some form</p>
-                        <button className="btn btn-secondary mr-5">Discover More</button>
-                        <button className="btn btn-outline btn-secondary">Latest Project</button>
+                        <p className="text- font-bold">We provide a safe and nurturing environment for your childs education, empowering them to pursue their dreams</p>
+                        <button className="btn btn-secondary mr-5">Learn More</button>
+                        
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
@@ -31,11 +30,10 @@ const Benar = () => {
                 <div className="absolute left-0 right-0  rounded-xl h-full flex items-center ">
                     <div className="space-y-7 w-1/2 pl-7">
                         <h1 className="text-4xl font-bold text-white">
-                            Affordable Price <br /> For Car <br /> Servicing
+                        Our Vibrant Educational Games
                         </h1>
-                        <p className="text- font-bold text-white">There are many variations of passages of  available, but the <br /> majority have suffered alteration in some form</p>
-                        <button className="btn btn-secondary mr-5">Discover More</button>
-                        <button className="btn btn-outline btn-secondary">Latest Project</button>
+                        <p className="text- font-bold text-white">Boys and girls learn, discover, and have fun through our vibrant educational games</p>
+                        <button className="btn btn-secondary mr-5">Explore Now</button>
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
@@ -48,11 +46,12 @@ const Benar = () => {
                 <div className="absolute left-0 right-0 h-full rounded-xl flex items-center ">
                     <div className="space-y-7 w-1/2 pl-7 ">
                         <h1 className="text-4xl font-bold text-white">
-                            Affordable Price <br /> For Car <br /> Servicing
+                        Efforts to Achieve Dreams
                         </h1>
-                        <p className="text- font-bold text-white">There are many variations of passages of  available, but the <br /> majority have suffered alteration in some form</p>
-                        <button className="btn btn-secondary mr-5">Discover More</button>
-                        <button className="btn btn-outline btn-secondary">Latest Project</button>
+                        <p className="text- font-bold text-white">We endeavor to realize childrens dreams and support them on the path of talent and discovery.
+</p>
+                        <button className="btn btn-secondary mr-5">Get Started</button>
+                        
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
@@ -65,11 +64,11 @@ const Benar = () => {
                 <div className="absolute left-0 right-0 h-full  rounded-xl flex items-center ">
                     <div className="space-y-7 w-1/2 pl-7 ">
                         <h1 className="text-4xl font-bold text-white">
-                            Affordable Price <br /> For Car <br /> Servicing
+                        Discussion and Collaboration
                         </h1>
-                        <p className="text- font-bold text-white">There are many variations of passages of  available, but the <br /> majority have suffered alteration in some form</p>
-                        <button className="btn btn-secondary mr-5">Discover More</button>
-                        <button className="btn btn-outline btn-secondary">Latest Project</button>
+                        <p className="text- font-bold text-white">Discussion and collaboration in our community are essential to encourage students and foster talent development</p>
+                        <button className="btn btn-secondary mr-5">Join Us</button>
+                      
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
@@ -82,11 +81,11 @@ const Benar = () => {
                 <div className="absolute left-0 right-0 h-full rounded-xl  flex items-center ">
                     <div className="space-y-7 w-1/2 pl-7 rounded-xl">
                         <h1 className="text-4xl font-bold text-white">
-                            Affordable Price <br /> For Car <br /> Servicing
+                        Discussion and Collaboration
                         </h1>
                         <p className="text- font-bold text-white">There are many variations of passages of  available, but the <br /> majority have suffered alteration in some form</p>
-                        <button className="btn btn-secondary mr-5">Discover More</button>
-                        <button className="btn btn-outline btn-secondary">Latest Project</button>
+                        <button className="btn btn-secondary mr-5">Join Us</button>
+                       
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">

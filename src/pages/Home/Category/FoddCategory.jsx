@@ -33,7 +33,7 @@ const FoddCategory = () => {
     return (
         <section className="">
             <Sectionhedin
-                sabheding={'---From 11:00am to 10:00pm---'}
+                sabheding={''}
                 heding={'partnership company'}
             ></Sectionhedin>
             <Marquee pauseOnClick={true} pauseOnHover={true} speed={50} >
