@@ -39,7 +39,7 @@ const Manageitems = () => {
     }
     return (
         <div>
-            <Sectionhedin heding='manage all items' sabheding='huryy up'></Sectionhedin>
+            <Sectionhedin heding='manage all classes' sabheding='huryy up'></Sectionhedin>
             <div>
                 <div className="overflow-x-auto">
                     <table className="table">
@@ -50,7 +50,7 @@ const Manageitems = () => {
                                     #
                                 </th>
                                 <th>image</th>
-                                <th>item name</th>
+                                <th>name</th>
                                 <th>price </th>
                                 <th>update</th>
                                 <th>delete</th>

@@ -24,7 +24,7 @@ const NavBar = () => {
             <li>
               <Link to="/menu">All classes</Link>
             </li>
-            <li> <Link to="/order/salad">Order</Link></li>
+            <li> <Link to="/order/salad">Add class</Link></li>
             <li> <Link to="/secret">secret</Link></li>
             <li>
               <Link to='/dashbort/cart'>
@@ -53,7 +53,7 @@ const NavBar = () => {
         <ul className="menu menu-horizontal px-1">
           <li><Link to="/">Home</Link></li>
           <li> <Link to="/menu">All classes</Link></li>
-          <li><Link to="/order/salad">Order</Link></li>
+          <li><Link to="/order/salad">Add class</Link></li>
           <li> <Link to="/secret">secret</Link></li>
           <li>
             <Link to='/dashbort/cart'>

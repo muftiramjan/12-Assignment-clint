@@ -39,7 +39,7 @@ const Cart = () => {
     return (
         <div>
             <div className="flex justify-evenly">
-                <p className="text-4xl">items {cart?.length}</p>
+                <p className="text-4xl">Classes {cart?.length}</p>
                 <p className="text-4xl">total price {totalPrice}</p>
                 <button className="btn btn-primary">pey</button>
             </div>

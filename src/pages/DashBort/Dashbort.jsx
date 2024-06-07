@@ -12,7 +12,7 @@ const Dashbort = () => {
     const [isAdmin] = Useadmin();
     return (
         <div className="flex">
-            <div className="w-64 h-screen bg-orange-400">
+            <div className="w-64 h-screen bg-green-500">
                 <ul className="menu">
               {
                 isAdmin ? <>
@@ -23,13 +23,13 @@ const Dashbort = () => {
 
                     <li><NavLink to="/dashbort/additem">
                        <FaUtensils></FaUtensils>
-                       add itemd</NavLink>
+                       add classes</NavLink>
                     </li>
                   
 
                     <li><NavLink to="/dashbort/manageitems">
                         <FaList></FaList>
-                        manage items </NavLink>
+                        manage class</NavLink>
                         
                     </li>
                     <li><NavLink to="/dashbort/bookins">

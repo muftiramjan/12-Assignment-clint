@@ -48,18 +48,18 @@ console.log(res.data);
     }
     return (
         <div >
-            <Sectionhedin heding='add an item' sabheding='whats new?'></Sectionhedin>
+            <Sectionhedin heding='add an classes' sabheding='whats new?'></Sectionhedin>
             <div >
                 <form  onSubmit={handleSubmit(onSubmit)}>
                     <label>First Name</label>
                     <input {...register("name")} />
                     <label className="form-control w-full ">
                         <div className="label">
-                            <span className="label-text">Recipe name</span>
+                            <span className="label-text">class name</span>
                         </div>
                         <input
                             type="text"
-                            placeholder="Recipe name"
+                            placeholder="class name"
                             {...register('name',{required:true})}
                             required
                             className="input input-bordered w-full " />
@@ -74,11 +74,11 @@ console.log(res.data);
                             <select defaultValue='default'{...register('cetegory',{required:true})}
                                 className="select select-bordered w-full ">
                                 <option disabled value='default'>selet a cetegory</option>
-                                <option value="female">salad</option>
-                                <option value="soup">soup</option>
-                                <option value="pizza">pizza</option>
-                                <option value="offered">offered</option>
-                                <option value="dessert">dessert</option>
+                                <option value="female">Math</option>
+                                <option value="soup">Language</option>
+                                <option value="pizza">Library</option>
+                                <option value="offered">French</option>
+                                <option value="dessert">MusicProgram</option>
 
                             </select>
 
@@ -101,7 +101,7 @@ console.log(res.data);
                     </div>
                     <label className="form-control">
                         <div className="label">
-                            <span className="label-text">recepi detals</span>
+                            <span className="label-text">class detals</span>
                           
                         </div>
                         <textarea {...register('recepi',{required:true})} className="textarea textarea-bordered h-24" placeholder="Bio"></textarea>
@@ -111,7 +111,7 @@ console.log(res.data);
                     <input  {...register('image')}type="file" className="file-input w-full max-w-xs" />
                     </div>
                     <button className="btn bg-black text-white">
-                        add items
+                        add class
                         <FaUtensils className="ml-2 p-2"></FaUtensils>
                     </button>
                 </form>

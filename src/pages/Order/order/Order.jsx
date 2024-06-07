@@ -22,8 +22,9 @@ const Order = () => {
     const MusicProgram = menus.filter(item => item.category === 'MusicProgram')
     return (
         <div>
-            <Helmet><title>Order</title></Helmet>
+            <Helmet><title>Add class</title></Helmet>
             <Ourmenucover img={ordercover} title='order confrim here'></Ourmenucover>
+            <p className="text-3xl font-semibold text-green-500 bg-orange-300">chose your class here</p>
             <Tabs defaultIndex={tabsindex} onSelect={(index) => settabindex(index)}>
                 <TabList>
                     <Tab>Math</Tab>

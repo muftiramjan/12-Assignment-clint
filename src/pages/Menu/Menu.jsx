@@ -18,7 +18,7 @@ const Menu = () => {
     const MusicProgram = menus.filter(item => item.category === 'MusicProgram')
     return (
         <div> 
-           <Helmet><title>menu</title></Helmet>
+           <Helmet><title>All classes</title></Helmet>
             {/* main cover */}
            <Ourmenucover img={Ourmenucoverr}title={"ALL classes"}></Ourmenucover>
 
