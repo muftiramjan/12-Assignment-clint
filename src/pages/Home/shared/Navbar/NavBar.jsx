@@ -5,6 +5,7 @@ import UseAuth from "../../../../Hoks/usehoks/user/UseAuth";
 import img5 from'../../../../assets/home/35.jpg';
 const NavBar = () => {
   const { user, loguot } =UseAuth();
+  console.log(user)
   const [cart] = Usecart();
   const handelloguot = () => {
     loguot()
@@ -75,13 +76,8 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <div className="avatar">
-          <div className="w-12 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-          {
-            user &&
-            <img className="w-12 rounded-full ml-44" referrerPolicy="no-referrer" src={user.photoURL} />
-          }
-          </div>
+        <div className="avatar w-12 h-14  ml-44">
+        <img  className="rounded-full" src={user?.photoURL} />
         </div>
       </div>
     </div>
