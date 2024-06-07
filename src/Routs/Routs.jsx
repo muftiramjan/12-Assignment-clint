@@ -14,6 +14,7 @@ import AdminRout from "../pages/PraivetRout/AdminRout";
 import ItemsAdd from "../pages/DashBort/ItemsAdd";
 import Manageitems from "../pages/DashBort/Manageitems/Manageitems";
 import Updeteitem from "../pages/DashBort/updeteItem/Updeteitem";
+import Paymant from "../pages/DashBort/paymant/Paymant";
 
 
 export const router = createBrowserRouter([
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
             {
                 path: "cart",
                 element: <Cart></Cart>
+            },
+            {
+            path:'paymant',
+            element:<Paymant></Paymant>
             },
             // admin routs
             {

@@ -2,6 +2,7 @@ import { FaTrashAlt } from "react-icons/fa";
 import Usecart from "../../Hoks/usehoks/usecart/Usecart";
 import Swal from "sweetalert2";
 import UseAxios from "../../Hoks/usehoks/useAxos/UseAxios";
+import { Link } from "react-router-dom";
 
 
 const Cart = () => {
@@ -41,7 +42,9 @@ const Cart = () => {
             <div className="flex justify-evenly">
                 <p className="text-4xl">Classes {cart?.length}</p>
                 <p className="text-4xl">total price {totalPrice}</p>
+               {cart.length?  <Link to='/dashbort/paymant'>
                 <button className="btn btn-primary">pey</button>
+                </Link>:<button className="btn btn-primary">pey</button>}
             </div>
             <div className="overflow-x-auto">
                 <table className="table">
