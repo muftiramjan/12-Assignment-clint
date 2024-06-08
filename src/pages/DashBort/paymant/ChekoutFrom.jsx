@@ -1,26 +1,57 @@
+
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
-
-
+import { useEffect, useState } from "react";
+import UseAxios from "../../../Hoks/usehoks/useAxos/UseAxios";
+import Usecart from "../../../Hoks/usehoks/usecart/Usecart";
 
 const ChekoutFrom = () => {
-const stripe = useStripe();
-const elements =useElements();
+  const [error,seterror]=useState('');
+  const [cliensecret,setcliensecret]=useState('');
+  const stripe = useStripe();
+  const elements = useElements();
+  const axiosSicoer = UseAxios();
+  const [cart]= Usecart();
+  const totalprice =cart.reduce( (total,item) => total +item.price,0)
+  
 
-    const handelSubmit =async (event) =>{
-        event.preventDefault();
+  useEffect( () =>{
+   axiosSicoer.post('/create-payment-intent',{price:totalprice})
+    .then(res => {
+      console.log(res.data.clientSecret);
+      setcliensecret(res.data.cliensecret)
 
-        if(!stripe || !elements){
-            return
-        }
-        const cart =elements.getElement(CardElement)
-        if(cart === null){
-            return
-        }
+    })
+  },[axiosSicoer,totalprice])
+
+  const handelSubmit = async (event) => {
+    event.preventDefault();
+
+    if (!stripe || !elements) {
+      return;
     }
+    
+    const card = elements.getElement(CardElement);
+    if (card === null) {
+      return;
+    }
+    
+    const { error, paymentMethod } = await stripe.createPaymentMethod({
+      type: 'card',
+      card,
+    });
+    
+    if (error) {
+      console.log('payment error', error);
+      seterror(error.message);
+    } else {
+      console.log('payment method', paymentMethod);
+      seterror('')
+    }
+  };
 
-    return (
-      <form onSubmit={handelSubmit}>
-  <CardElement
+  return (
+    <form onSubmit={handelSubmit}>
+      <CardElement
         options={{
           style: {
             base: {
@@ -36,12 +67,12 @@ const elements =useElements();
           },
         }}
       />
-      <button type="submit" disabled={!stripe}>
+      <button className="btn btn-outline border-0 border-b-4 border-orange-400" type="submit" disabled={!stripe}>
         Pay
       </button>
-
-      </form>
-    );
+      <p className="text-red-600">{error}</p>
+    </form>
+  );
 };
 
 export default ChekoutFrom;

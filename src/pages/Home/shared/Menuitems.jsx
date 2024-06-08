@@ -11,7 +11,7 @@ const Menuitems = ({item}) => {
                 <p className='text-xl text-white'>{recipe}</p>
             <p className='text-green-400'>{podhovi}</p>
             <div className="flex items-center justify-center mt-5">
-           <button className="btn btn-outline border-0 border-b-4 bg-white">start teaching today</button>
+           <button className="btn btn-outline border-0 border-b-4 border-orange-400 text-white">start teaching today</button>
            </div>
             </div>
         

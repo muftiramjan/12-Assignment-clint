@@ -16,7 +16,7 @@ const Benar = () => {
                         Illuminate Education, Foster Dreams 
                         </h1>
                         <p className="text- font-bold">We provide a safe and nurturing environment for your childs education, empowering them to pursue their dreams</p>
-                        <button className="btn btn-secondary mr-5">Learn More</button>
+                        <button className="btn btn-outline border-0 border-b-4 border-orange-400 text-white">Learn More</button>
                         
                     </div>
                 </div>
@@ -33,7 +33,7 @@ const Benar = () => {
                         Our Vibrant Educational Games
                         </h1>
                         <p className="text- font-bold text-white">Boys and girls learn, discover, and have fun through our vibrant educational games</p>
-                        <button className="btn btn-secondary mr-5">Explore Now</button>
+                        <button className="btn btn-outline border-0 border-b-4 border-orange-400 text-white">Explore Now</button>
                     </div>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
@@ -50,7 +50,7 @@ const Benar = () => {
                         </h1>
                         <p className="text- font-bold text-white">We endeavor to realize childrens dreams and support them on the path of talent and discovery.
 </p>
-                        <button className="btn btn-secondary mr-5">Get Started</button>
+                        <button className="btn btn-outline border-0 border-b-4 border-orange-400 text-white">Get Started</button>
                         
                     </div>
                 </div>
@@ -67,7 +67,7 @@ const Benar = () => {
                         Discussion and Collaboration
                         </h1>
                         <p className="text- font-bold text-white">Discussion and collaboration in our community are essential to encourage students and foster talent development</p>
-                        <button className="btn btn-secondary mr-5">Join Us</button>
+                        <button className="btn btn-outline border-0 border-b-4 border-orange-400 text-white">Join Us</button>
                       
                     </div>
                 </div>
@@ -84,7 +84,7 @@ const Benar = () => {
                         Discussion and Collaboration
                         </h1>
                         <p className="text- font-bold text-white">There are many variations of passages of  available, but the <br /> majority have suffered alteration in some form</p>
-                        <button className="btn btn-secondary mr-5">Join Us</button>
+                        <button className="btn btn-outline border-0 border-b-4 border-orange-400 text-white">Join Us</button>
                        
                     </div>
                 </div>

@@ -4,8 +4,7 @@ import Sectionhedin from "../../../components/Sectionhedin";
 import { loadStripe } from "@stripe/stripe-js";
 import ChekoutFrom from "./ChekoutFrom";
 // add pubilisobol key
-
-const stripePromis=loadStripe(import.meta.env.VITE_PAYMANT_GATWY_PK);
+const stripePromis= loadStripe(import.meta.env.VITE_PAYMANT_GATWY_PK);
 const Paymant = () => {
     return (
         <div>

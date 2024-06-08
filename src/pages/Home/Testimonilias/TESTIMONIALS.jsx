@@ -36,7 +36,7 @@ const Testimonials = () => {
             </div>
             {visibleCount < Reviws.length && (
                 <div className="text-center mt-4">
-                    <button onClick={showMore} className="bg-blue-500 text-white py-2 px-4 rounded">Show More</button>
+                    <button onClick={showMore} className="btn btn-outline border-0 border-b-4 border-orange-400">Show More</button>
                 </div>
             )}
         </section>
