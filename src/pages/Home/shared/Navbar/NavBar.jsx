@@ -25,7 +25,6 @@ const NavBar = () => {
               <Link to="/menu">All classes</Link>
             </li>
             <li> <Link to="/order/salad">Add class</Link></li>
-            <li> <Link to="/secret">secret</Link></li>
             <li>
               <Link to='/dashbort/cart'>
                 <button className="">
@@ -54,7 +53,7 @@ const NavBar = () => {
           <li><Link to="/">Home</Link></li>
           <li> <Link to="/menu">All classes</Link></li>
           <li><Link to="/order/salad">Add class</Link></li>
-          <li> <Link to="/secret">secret</Link></li>
+        
           <li>
             <Link to='/dashbort/cart'>
                 <div className="">adeded classes+ ({cart.length})</div>

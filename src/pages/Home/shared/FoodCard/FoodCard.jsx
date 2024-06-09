@@ -7,7 +7,7 @@ import Usecart from '../../../../Hoks/usehoks/usecart/Usecart';
 
 
 const FoodCard = ({item}) => {
-    const {name,recipe,image,price,_id}=item;
+    const {name,recipe,image,price,_id ,Totalenrolment}=item;
     const {user} =UseAuth();
     const navigate= useNavigate();
     const location =useLocation();
@@ -58,11 +58,12 @@ const FoodCard = ({item}) => {
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
           
-            <figure><img src={image} alt="Shoes" /></figure>
+            <figure><img className='h-80 w-96' src={image}  /></figure>
                 <h2 className="card-title bg-slate-900 text-white absolute right-0 mr-4 mt-4 px-3">{price}</h2>
             <div className="card-body flex flex-col items-center">
                 <h2 className="card-title">{name}</h2>
                 <p>{recipe}</p>
+                <p> Totalenrolment + {Totalenrolment}</p>
                 <div className="card-actions justify-center">
                     <button
                     onClick={handeleaddFood}

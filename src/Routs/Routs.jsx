@@ -5,7 +5,6 @@ import Menu from "../pages/Menu/Menu";
 import Order from "../pages/Order/order/Order";
 import Login from "../pages/login/Login";
 import Signup from "../pages/signup/Signup";
-import Secret from "../pages/Home/shared/Secret/Secret";
 import PraivetRout from "../pages/PraivetRout/PraivetRout";
 import Dashbort from "../pages/DashBort/Dashbort";
 import Cart from "../pages/DashBort/Cart";
@@ -42,10 +41,7 @@ export const router = createBrowserRouter([
                 path: '/signup',
                 element: <Signup></Signup>
             },
-            {
-                path: '/secret',
-                element: <PraivetRout><Secret></Secret></PraivetRout>
-            }
+           
         ]
     },
     {
