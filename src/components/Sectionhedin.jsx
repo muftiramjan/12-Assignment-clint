@@ -1,11 +1,9 @@
 import PropTypes from 'prop-types';
-
-
 const Sectionhedin = ({ heding, sabheding }) => {
     
     return (
-        <div className='w-3/12 mx-auto text-center mb-4'>
-            <p className='text-[#D99904] mb-2'>{sabheding}</p>
+        <div className='w-3/12 mx-auto text-center mb-4 bg-lime-400'>
+            <p className=' mb-2'>{sabheding}</p>
             <p className='text-2xl uppercase border-y-4 p-3'>{heding}</p>
         </div>
     );

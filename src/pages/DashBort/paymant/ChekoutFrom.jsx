@@ -164,7 +164,7 @@ const CheckoutForm = () => {
       setError(confirmError.message);
     } else {
       console.log('PaymentIntent', paymentIntent);
-      // সফল পেমেন্টের পর যা করতে চান তা করুন
+    
     }
   };
 
@@ -186,7 +186,8 @@ const CheckoutForm = () => {
           },
         }}
       />
-      <button className="btn btn-outline border-0 border-b-4 border-orange-400" type="submit" disabled={!stripe || !clientSecret}>
+      <button className="btn btn-outline border-0 border-b-4 border-orange-400" type="submit" disabled={!stripe}>
+      {/* || !clientSecret */}
         Pay
       </button>
       {error && <p className="text-red-600">{error}</p>}
