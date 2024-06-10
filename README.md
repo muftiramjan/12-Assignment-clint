@@ -39,7 +39,7 @@ live link:
  1. [@Lottie-react-package](https://www.npmjs.com/package/lottie-react)I have this package In pragraf Data. 
 2. [@Framer-motion](https://www.npmjs.com/package/framer-motion)I have this packag Between the fotter section.
 
-3. [@React-fast marquee](https://www.react-fast-marquee.com/)I have this packag Between the fotter section.
+3. [@React-fast marquee](https://www.react-fast-marquee.com/)I have this packag Between the thecher infomition section.
 4. [@riact hook from](https://react-hook-form.com/)I have this packag Between the fotter section.
 5. [@swiper](https://swiperjs.com/get-started)I have this packag Between the fotter section.
 6. [@awesome-react-components](https://github.com/brillout/awesome-react-components)I have this packag Between the fotter section.
