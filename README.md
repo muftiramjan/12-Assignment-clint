@@ -34,7 +34,6 @@ live link:
 15. update and delete botton creat ok
 16. revel used in paragraf
 17. tooltip use botoon 
-
 <!-- Two packages are used -->
  1. [@Lottie-react-package](https://www.npmjs.com/package/lottie-react)I have this package In pragraf Data. 
 2. [@Framer-motion](https://www.npmjs.com/package/framer-motion)I have this packag Between the fotter section.
