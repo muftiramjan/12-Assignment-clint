@@ -14,6 +14,7 @@ import ItemsAdd from "../pages/DashBort/ItemsAdd";
 import Manageitems from "../pages/DashBort/Manageitems/Manageitems";
 import Updeteitem from "../pages/DashBort/updeteItem/Updeteitem";
 import Paymant from "../pages/DashBort/paymant/Paymant";
+import Teacherrequest from "../pages/DashBort/Teacherrequest/Teacherrequest";
 
 
 export const router = createBrowserRouter([
@@ -56,6 +57,10 @@ export const router = createBrowserRouter([
             path:'paymant',
             element:<Paymant></Paymant>
             },
+            {
+            path:'Teacherrequest',
+            element:<Teacherrequest></Teacherrequest>
+            },
             // admin routs
             {
                 path: "additem",
@@ -68,7 +73,7 @@ export const router = createBrowserRouter([
             {
                 path: "updeteItem/:id",
                 element:<AdminRout> <Updeteitem></Updeteitem> </AdminRout>,
-                loader: ({params}) => fetch(`http://localhost:5000/menu/${params.id}`)
+                loader: ({params}) => fetch(`https://12-assinmet-sarver.vercel.app/menu/${params.id}`)
             },
             {
                 path: "allusers",

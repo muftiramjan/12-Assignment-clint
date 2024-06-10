@@ -5,6 +5,7 @@ import UseAuth from "../../../../Hoks/usehoks/user/UseAuth";
 import img5 from'../../../../assets/home/35.jpg';
 const NavBar = () => {
   const { user, loguot } =UseAuth();
+  console.log(user);
   const [cart] = Usecart();
   const handelloguot = () => {
     loguot()

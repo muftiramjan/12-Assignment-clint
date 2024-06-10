@@ -49,6 +49,10 @@ const Dashbort = () => {
                         <FaHome></FaHome>
                         user Home</NavLink>
                     </li>
+                   <li><NavLink to="/dashbort/Teacherrequest">
+                        <FaUser></FaUser>
+                        teacher-request</NavLink>
+                    </li>
 
                     <li><NavLink to="/dashbort/rezarvtion">
                        <FaCalendar></FaCalendar>
